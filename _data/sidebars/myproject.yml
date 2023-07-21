@@ -19,19 +19,13 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Introduction
+ 
+
+  - title: 자바_프로젝트
     output: web, pdf
     folderitems:
 
-    - title: Overview
-      url: /p3_landing_page.html
-      output: web
-
-  - title: Simple Workflow
-    output: web, pdf
-    folderitems:
-
-    - title: Sample 1
+    - title: 첫번째 프로젝트
       url: /myproject.html
       output: web, pdf
 
