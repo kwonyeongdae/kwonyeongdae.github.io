@@ -7,7 +7,7 @@ topnav:
       external_url: https://github.com/tomjoht/documentation-theme-jekyll
     - title: News
       url: /news
-    - title: 영대Project
+    - title: Project
       external_url: https://github.com/kwonyeongdae/ezenproject.git
 
 #Topnav dropdowns
