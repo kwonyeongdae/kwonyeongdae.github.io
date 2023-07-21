@@ -32,63 +32,8 @@ entries:
     folderitems:
 
     - title: Sample 1
-      url: /p3_sample1.html
+      url: /myproject.html
       output: web, pdf
 
-    - title: Sample 2
-      url: /p3_sample2.html
-      output: web, pdf
-
-    - title: Sample 3
-      url: /p3_sample3.html
-      output: web, pdf
-
-    - title: Sample 4
-      url: /p3_sample4.html
-      output: web, pdf
-
-    - title: Sample 5
-      url: /p3_sample5.html
-      output: web, pdf
-
-  - title: Complex Workflow
-    output: web, pdf
-    folderitems:
-
-    - title: Sample 6
-      url: /p3_sample6.html
-      output: web, pdf
-
-    - title: Sample 7
-      url: /p3_sample7.html
-      output: web, pdf
-
-    - title: Sample 8
-      url: /p3_sample8.html
-      output: web, pdf
-
-    - title: Sample 9
-      url: /p3_sample9.html
-      output: web, pdf
-
-    - title: Sample 10
-      url: /p3_sample10.html
-      output: web, pdf
-
-    - title: Sample 11
-      url: /p3_sample11.html
-      output: web, pdf
-
-    - title: Sample 12
-      url: /p3_sample12.html
-      output: web, pdf
-
-    - title: Sample 13
-      url: /p3_sample13.html
-      output: web, pdf
-
-    - title: Sample 14
-      url: /p3_sample14.html
-      output: web, pdf
 
 # Copyright 2021 Google LLC
