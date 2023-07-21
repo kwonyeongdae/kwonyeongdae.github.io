@@ -32,7 +32,7 @@ topnav_dropdowns:
           url: /p1_landing_page.html
         - title: Product 2
           url: /p2_landing_page.html
-        - title: Product 3
-          url: /p3_landing_page.html
+        - title: kwonproject
+          url: /project_content.html
 
 # Copyright 2021 Google LLC
