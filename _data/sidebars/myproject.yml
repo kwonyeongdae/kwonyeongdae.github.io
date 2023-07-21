@@ -26,8 +26,7 @@ entries:
     folderitems:
 
     - title: 첫번째 프로젝트
-      url: /AdmainController.java
+      url: /priject_content.html
       output: web, pdf
-      type: homepage
 
 # Copyright 2021 Google LLC
