@@ -26,7 +26,7 @@ entries:
     folderitems:
 
     - title: 첫번째 프로젝트
-      url: /myproject.html
+      url: /AdmainController.java
       output: web, pdf
 
 
