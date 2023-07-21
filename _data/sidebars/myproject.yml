@@ -19,6 +19,13 @@ entries:
       output: pdf
       type: frontmatter
 
+ - title: Introduction
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /project_content.html
+      output: web
  
 
   - title: 자바_프로젝트
