@@ -28,6 +28,6 @@ entries:
     - title: 첫번째 프로젝트
       url: /AdmainController.java
       output: web, pdf
-
+      type: homepage
 
 # Copyright 2021 Google LLC
