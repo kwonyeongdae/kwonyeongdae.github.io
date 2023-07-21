@@ -1,8 +1,8 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Product2
-  product: Product2
+- title: Product3
+  product: Product3
   version: 1.0
   folders:
 
@@ -24,7 +24,7 @@ entries:
     folderitems:
 
     - title: Overview
-      url: /p2_landing_page.html
+      url: /p3_landing_page.html
       output: web
 
   - title: Simple Workflow
@@ -32,23 +32,23 @@ entries:
     folderitems:
 
     - title: Sample 1
-      url: /p2_sample1.html
+      url: /p3_sample1.html
       output: web, pdf
 
     - title: Sample 2
-      url: /p2_sample2.html
+      url: /p3_sample2.html
       output: web, pdf
 
     - title: Sample 3
-      url: /p2_sample3.html
+      url: /p3_sample3.html
       output: web, pdf
 
     - title: Sample 4
-      url: /p2_sample4.html
+      url: /p3_sample4.html
       output: web, pdf
 
     - title: Sample 5
-      url: /p2_sample5.html
+      url: /p3_sample5.html
       output: web, pdf
 
   - title: Complex Workflow
@@ -56,39 +56,39 @@ entries:
     folderitems:
 
     - title: Sample 6
-      url: /p2_sample6.html
+      url: /p3_sample6.html
       output: web, pdf
 
     - title: Sample 7
-      url: /p2_sample7.html
+      url: /p3_sample7.html
       output: web, pdf
 
     - title: Sample 8
-      url: /p2_sample8.html
+      url: /p3_sample8.html
       output: web, pdf
 
     - title: Sample 9
-      url: /p2_sample9.html
+      url: /p3_sample9.html
       output: web, pdf
 
     - title: Sample 10
-      url: /p2_sample10.html
+      url: /p3_sample10.html
       output: web, pdf
 
     - title: Sample 11
-      url: /p2_sample11.html
+      url: /p3_sample11.html
       output: web, pdf
 
     - title: Sample 12
-      url: /p2_sample12.html
+      url: /p3_sample12.html
       output: web, pdf
 
     - title: Sample 13
-      url: /p2_sample13.html
+      url: /p3_sample13.html
       output: web, pdf
 
     - title: Sample 14
-      url: /p2_sample14.html
+      url: /p3_sample14.html
       output: web, pdf
 
 # Copyright 2021 Google LLC
