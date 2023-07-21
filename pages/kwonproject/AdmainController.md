@@ -9,6 +9,7 @@ map_name: usermap
 box_number: 1
 folder: kwonproject
 ---
+```java
 package com.ezen.spring.board.teampro.admin;
 
 import java.util.*;
@@ -68,3 +69,4 @@ public class AdmainController {
 	}
 	
 }
+```
