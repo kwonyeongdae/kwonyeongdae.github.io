@@ -1,3 +1,9 @@
+---
+title: "↓↓포토폴리오↓↓"
+permalink: /photo/
+layout: single
+---
+
 ```java
 package com.ezen.spring.board.teampro.carrotmarket;
 import org.springframework.web.bind.annotation.CookieValue;
