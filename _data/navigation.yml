@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "블로그 방문하기"
-    url: https://devinlife.com/
+    url: https://kwonyeongdae.github.io/
   - title: "Categories"
     url: /categories/
-  - title: "About"
+  - title: "자기소개"
     url: /about/
