@@ -1,4 +1,4 @@
-...java
+```java
 package com.ezen.spring.board.teampro.carrotmarket;
 import org.springframework.web.bind.annotation.CookieValue;
 
@@ -402,4 +402,4 @@ public class CarrotController {
 
 }
 
-...
+```
