@@ -1,12 +1,8 @@
 # main links
 main:
-  - title: "내 소개"
-    url: https://github.com/kwonyeongdae/portfolio
-   - title: "포토폴리오"
-    url: https://github.com/kwonyeongdae/portfolio
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "블로그 방문하기"
+    url: https://devinlife.com/
+  - title: "Categories"
+    url: /categories/
+  - title: "About"
+    url: /about/
