@@ -1,10 +1,10 @@
 ---
-title: "↓↓About KwonYeongDae↓↓"
+title: "↓↓KwonYeongDae↓↓"
 permalink: /about/
 layout: single
 ---
 
-## 저는...
+## #About Me#
 - 92년 출생
 - 고등학교 졸업
 - 국비지원학원 수료(python,java,spring기반 빅데이터 SW개발자 양성)
