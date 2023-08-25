@@ -293,20 +293,20 @@ function added() {
 </div>
 </body>
 ```
-<div style="font-size : 17px; margin-bottom: 7px">
--문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력
+<div style="font-size : 15px; margin-bottom: 7px">
+문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력
 되지 않았다면 저장이 되지 않게 만들었습니다.
 <img src="/assets/images/con1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="float: left;"/>
 <img src="/assets/images/ti1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="clear: left;"/><br>
 </div>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 아이디는 세션을 가져오기 때문에 로그인을 한다면 자동으로 아이디를 입력하게 만들었습니다. 
 </div>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 비밀번호는 4자리만 입력하게 막아뒀는데 이것도 javascript로 처리했습니다.
 </div>
 <img src="/assets/images/add.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 add기능이 정상적으로 돌아갑니다. 사진파일을 올린다면 어떤사진인지 클라이언트가 볼수 있게 만들었습니다 텍스트 파일이라면 아무것도 뜨지 않습니다.
 </div><br>
 
