@@ -112,7 +112,7 @@ author:
   avatar           : "/assets/images/img2.jpg"
   bio              : "늦은 나이에 적성을 찾아서 개발이 취미가 되고 취미가 직업이 된 개발자."
   location         : "South Korea"
-  email            : 'Email'
+  email            : 'kydzzang77@naver.com'
   GitHub           : 'GitHub'
   links:
     - label: "Email"
@@ -120,7 +120,7 @@ author:
       url: "mailto:kydzzang77@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://kwonyeongdae.github.io/"
+      url: "https://github.com/kwonyeongdae/portfolio"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
