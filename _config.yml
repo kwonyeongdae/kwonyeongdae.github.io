@@ -108,15 +108,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "코딩마스터를 꿈꾸는 개발자"
+  name             : "Kwon YeongDea(권영대"
   avatar           : "/assets/images/img2.jpg"
   bio              : "늦은 나이에 적성을 찾아서 개발이 취미가 되고 취미가 직업이 된 개발자."
   location         : "South Korea"
-  email            : 
+  email            : 'Email'
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:kydzzang77@naver.com"
+      url: "mailto:kydzzang77@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://kwonyeongdae.github.io/"
