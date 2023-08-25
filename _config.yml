@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kwon YeonngDae"
+title                    : "코딩마스터를 꿈꾸는 개발자"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "YeongDea Kwon(권영대)"
@@ -108,15 +108,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kwon YeongDae"
+  name             : "코딩마스터를 꿈꾸는 개발자"
   avatar           : "/assets/images/img2.jpg"
   bio              : "늦은 나이에 적성을 찾아서 개발이 취미가 되고 취미가 직업이 된 개발자."
   location         : "South Korea"
-  email            : "Email"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url : "mailto:kydzzang77@naver.com"
+      # url: "mailto:kydzzang77@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://kwonyeongdae.github.io/"
