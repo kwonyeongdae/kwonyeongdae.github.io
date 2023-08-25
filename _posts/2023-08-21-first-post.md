@@ -1,12 +1,15 @@
 ---
-title:  "github.io 블로그 시작하기"
-excerpt: "GitHub Blog 서비스인 github.io 블로그 시작하기로 했다."
+title:  "첫번째 팀 프로젝트 - 로그인&회원관리 페이지"
+excerpt: "아동용 책판매 쇼핑몰 - 로그인&회원관리"
 
 categories:
-  - Blog
+  - team preject
 tags:
-  - Blog
-last_modified_at: 2019-04-13T08:06:00-05:00
+  - java
+  - spring
+  - jsp
+  - MySQL
+last_modified_at: 2023-08-25 19:23PM
 ---
 
 GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
