@@ -2,9 +2,9 @@
 main:
   - title: "GitHub"
     url: https://kwonyeongdae.github.io/
-  - title: "자기소개"
+  - title: "introduction"
     url: /about/
-  - title: "포토폴리오"
+  - title: "portfolio"
     url: /photo/ 
   - title: "projects"
     url: /categories/
