@@ -175,10 +175,10 @@ public class BoardController {
 	   }
 ```
 <div style="font-size : 17px; margin-bottom: 7px">
-첨부물은 2개만 받기로 정해서 MultipartFile[]를 배열로 받기로 햇습니다.
+1. 첨부물은 2개만 받기로 정해서 MultipartFile[]를 배열로 받기로 햇습니다.
 </div>
 <div style="font-size : 17px; margin-bottom: 15px">
-@SessionAttribute(name = "userid", required = false)String userid는 로그인한 유저만 글등록을 가능하게 만들었기 때문에 로직을 추가 했습니다.
+2. @SessionAttribute(name = "userid", required = false)String userid는 로그인한 유저만 글등록을 가능하게 만들었기 때문에 로직을 추가 했습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">ADDform 페이지-jsp</div>
@@ -294,19 +294,19 @@ function added() {
 </body>
 ```
 <div style="font-size : 15px; margin-bottom: 7px">
-문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력 되지 않았다면 저장이 되지 않게 만들었습니다.</div>
+1. 문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력 되지 않았다면 저장이 되지 않게 만들었습니다.</div>
 <img src="/assets/images/con1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="float: left;"/>
 <img src="/assets/images/ti1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="clear: left;"/><br>
 
 <div style="font-size : 15px; margin-bottom: 7px">
-아이디는 세션을 가져오기 때문에 로그인을 한다면 자동으로 아이디를 입력하게 만들었습니다. 
+2. 아이디는 세션을 가져오기 때문에 로그인을 한다면 자동으로 아이디를 입력하게 만들었습니다. 
 </div>
 <div style="font-size : 15px; margin-bottom: 7px">
-비밀번호는 4자리만 입력하게 막아뒀는데 이것도 javascript로 처리했습니다.
+3. 비밀번호는 4자리만 입력하게 막아뒀는데 이것도 javascript로 처리했습니다.
 </div>
 <img src="/assets/images/add.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
 <div style="font-size : 15px; margin-bottom: 7px">
-add기능이 정상적으로 돌아갑니다. 사진파일을 올린다면 어떤사진인지 클라이언트가 볼수 있게 만들었습니다 텍스트 파일이라면 아무것도 뜨지 않습니다.
+4. add기능이 정상적으로 돌아갑니다. 사진파일을 올린다면 어떤사진인지 클라이언트가 볼수 있게 만들었습니다 텍스트 파일이라면 아무것도 뜨지 않습니다.
 </div><br>
 
 <hr>
@@ -348,10 +348,10 @@ add기능이 정상적으로 돌아갑니다. 사진파일을 올린다면 어�
 </select>
 ```
 <div style="font-size : 17px; margin-bottom: 7px">
-데이터 베이스에 저장된 문의사항들을 불러옵니다. 여기서는 두개의 테이블을 불러와야 하기 때문에 JOIN을 사용했습니다.
+1. 데이터 베이스에 저장된 문의사항들을 불러옵니다. 여기서는 두개의 테이블을 불러와야 하기 때문에 JOIN을 사용했습니다.
 </div>
 <div style="font-size : 17px; margin-bottom: 15px">
-검색기능을 사용해야 하므로 번호, 이름, 내용으로 찾을시 해당 목록이 나오게 만드는 SQL문입니다
+2. 검색기능을 사용해야 하므로 번호, 이름, 내용으로 찾을시 해당 목록이 나오게 만드는 SQL문입니다
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">BoardMapper와 BoardDAO</div>
@@ -392,13 +392,13 @@ public class BoardDao {
 
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-목록창에는 검색기능도 있어야 하므로 검색후 목록이 나올수 있게 추가했습니다.
+1. 목록창에는 검색기능도 있어야 하므로 검색후 목록이 나올수 있게 추가했습니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
-매우 많은 목록이 있다면 이용자가 한번에 보기 어려우므로 pageInfo를 사용해서 페이지별로 볼수 있는 기능도 추가했습니다. 목록에 가장 기본적으로 넣어야할 기능이 아닐까 생각합니다.
+2. 매우 많은 목록이 있다면 이용자가 한번에 보기 어려우므로 pageInfo를 사용해서 페이지별로 볼수 있는 기능도 추가했습니다. 목록에 가장 기본적으로 넣어야할 기능이 아닐까 생각합니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-category는 번호, 이름, 내용 이고 key는 사용자가 입력한 값을 서버가 받아서 원하는 값을 웹페이지에 출력해줍니다.
+3. category는 번호, 이름, 내용 이고 key는 사용자가 입력한 값을 서버가 받아서 원하는 값을 웹페이지에 출력해줍니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">Board Controller</div>
@@ -436,10 +436,10 @@ public class BoardController {
 	}
 ```
 <div style="font-size : 17px; margin-bottom: 7px">
-웹페이지에 출력만 하면 되므로 get방식만을 사용했습니다.
+1. 웹페이지에 출력만 하면 되므로 get방식만을 사용했습니다.
 </div>
 <div style="font-size : 17px; margin-bottom: 15px">
-한 페이지당 10개의 목록만 출력하게 만들었습니다.
+2. 한 페이지당 10개의 목록만 출력하게 만들었습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">LIST 페이지-jsp</div>
@@ -568,17 +568,17 @@ function showPasswordModal(bnum,pass) {
 ```
 
 <div style="font-size : 17px; margin-bottom: 7px">
-검색기능을 활용해서 내가 원하는 게시물을 찾을수 있습니다.<br>
-(admin 계정으로 로그인해야 모든 title이 보이게 만듬)<br>
-title에 a태그로 링크를 달아서 클릭하면 문의사항 디테일에 들어갈수 있게 만들었습니다.
+1. 검색기능을 활용해서 내가 원하는 게시물을 찾을수 있습니다.<br>
+   (admin 계정으로 로그인해야 모든 title이 보이게 만듬)<br>
+2. title에 a태그로 링크를 달아서 클릭하면 문의사항 디테일에 들어갈수 있게 만들었습니다.
 <img src="/assets/images/list.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <img src="/assets/images/num.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <img src="/assets/images/name.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <img src="/assets/images/test.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
 </div>
 <div style="font-size : 17px; margin-bottom: 15px">
-문의 글을 보기위해선 비밀번호를 입력해야 합니다.<br>
-(일반회원 화면)
+3. 문의 글을 보기위해선 비밀번호를 입력해야 합니다.<br>
+   (일반회원 화면)
 <img src="/assets/images/pass.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
 
@@ -616,16 +616,16 @@ SELECT * FROM comment WHERE bnum = #{bnum}
 ```
 
 <div style = "font-size : 15px; margin-bottom: 7px">
-update는 리스트에서 title을 누르면 문의사항글을 보여줌과 동시에 조회수가 올라갑니다.
+1. update는 리스트에서 title을 누르면 문의사항글을 보여줌과 동시에 조회수가 올라갑니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
-"addcomment"와"comlist"는 관리자가 댓글을 달고 웹화면에 출력하게 해줍니다.
+2. "addcomment"와"comlist"는 관리자가 댓글을 달고 웹화면에 출력하게 해줍니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
-"getdownload"첨부파일 다운로드를 위한 SQL문 입니다.
+3. "getdownload"첨부파일 다운로드를 위한 SQL문 입니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-두개의 테이블을 JOIN을 사용해서 가져옵니다.
+4. 두개의 테이블을 JOIN을 사용해서 가져옵니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">BoardMapper와 BoardDAO</div>
@@ -653,31 +653,26 @@ public class BoardDao {
 	@Qualifier("boardmapper")
 	private BoardMapper bm;
 	
-	public List<Map<String,Object>> getboard(int bnum)
-	{
+	public List<Map<String,Object>> getboard(int bnum){
 		return bm.getBoard(bnum);
 	}
 
-	public boolean hitup(Boardvo vo)
-	{
+	public boolean hitup(Boardvo vo){
 		return bm.gethit(vo)>0;
 	}
 
 	//↓관리자 댓글 생성
-	public boolean addcomm(Comment vo)
-	{
+	public boolean addcomm(Comment vo){
 		boolean add = bm.addcomment(vo)>0;
 		return add;
 	}
 	
-	public List<Comment> getcomlist(int bnum)
-	{
+	public List<Comment> getcomlist(int bnum){
 		 List<Comment> clist = bm.comlist(bnum);
 		return clist;
 	}
 
-	public String getdownload(int num)
-	{
+	public String getdownload(int num){
 		return bm.getdownload(num);
 	}
 
@@ -696,9 +691,9 @@ public class BoardDao {
 		return bSaved&&aSaved;
 	}
 
-``
+```
 <div style = "font-size : 15px; margin-bottom: 15px">
-이용자가 준 num을 가지고 DB에서 해당 객체를 찾아옵니다.
+1. 이용자가 준 num을 가지고 DB에서 해당 객체를 찾아옵니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">Board Controller</div>
@@ -775,22 +770,21 @@ public class BoardController {
 		Map<String, Boolean> map = new HashMap<>();
 		map.put("remove", bd.delete(bnum,fname,request));
 		//System.out.println("결과 = " + bd.delete(bnum, vo));
-		
 		return map;
 		}
 	
 ```
 <div style="font-size : 15px; margin-bottom: 7px">
-model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지를 판단하기 위해 추가 됬습니다.
+1. model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지를 판단하기 위해 추가 됬습니다.
 </div>
 <div style="font-size : 15px; margin-bottom: 7px">
-리스트에서 title을 눌러 문의사항 글에 들어가면 가장 먼저 조회수가 1올라갑니다.
+2. 리스트에서 title을 눌러 문의사항 글에 들어가면 가장 먼저 조회수가 1올라갑니다.
 </div>
 <div style="font-size : 15px; margin-bottom: 7px">
-문의사항에 댓글을 달기위해 post방식으로 데이터를 전송을 받습니다. "comlist"는 등록한 댓글을 불러옵니다
+3. 문의사항에 댓글을 달기위해 post방식으로 데이터를 전송을 받습니다. "comlist"는 등록한 댓글을 불러옵니다
 </div>
 <div style="font-size : 15px; margin-bottom: 15px">
-첨부파일을 다운받을수 있게 로직을 만들었습니다.
+4. 첨부파일을 다운받을수 있게 로직을 만들었습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">DETAIL 페이지-jsp</div>
@@ -871,7 +865,6 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
 	      if (realAuthor = requester) {
 	    	  location.href = "/board/board/update/"+bnum;
 		      }
-	     
 	    }
    </script>
 </head>
@@ -912,7 +905,6 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
         <!-- If you want to handle the 'otherwise' case, you can add the content here -->
     </c:otherwise>
 </c:choose>
-
     <tr>
       <th>CONTENT</th>
       <td class="content">${detail[0]['content']}</td>
@@ -953,15 +945,15 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
 댓글을 달수 있는건 관리자만 가능하기 때문에 댓글 등록은 관리자한테만 보이게 if문을  사용했습니다.
 </div>
 <div style="font-size : 15px; margin-bottom: 7px">
-관리자로 로그인시에는 댓글을 달수있는 칸이 생깁니다
+1. 관리자로 로그인시에는 댓글을 달수있는 칸이 생깁니다
 <img src="/assets/images/de2.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
 <div style="font-size : 15px; margin-bottom: 7px">
-관리자가 댓글을 달았다면 이런 화면이 보여집니다
+2. 관리자가 댓글을 달았다면 이런 화면이 보여집니다
 <img src="/assets/images/de.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
 <div style="font-size : 15px; margin-bottom: 7px">
-첨부파일은 다운받을수 있게 만들었습니다.<br>
+3. 첨부파일은 다운받을수 있게 만들었습니다.<br>
 <img src="/assets/images/de3.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
 
@@ -987,10 +979,10 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
 </delete>
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-문의사항 삭제시 두개의 테이블에 적용해야 하기 때문에 두 테이블 삭제 SQL문을 만들었습니다.
+1. 문의사항 삭제시 두개의 테이블에 적용해야 하기 때문에 두 테이블 삭제 SQL문을 만들었습니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-업데이트는 글의 제목과 내용만 수정하게 만들었습니다.
+2. 업데이트는 글의 제목과 내용만 수정하게 만들었습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">BoardMapper와 BoardDAO</div>
@@ -1043,10 +1035,10 @@ public class BoardDao {
 
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-파일만 업데이트가 가능하고, 첨부파일을 제외한 제목, 내용만 수정이 가능하게 만들었습니다. 
+1. 파일만 업데이트가 가능하고, 첨부파일을 제외한 제목, 내용만 수정이 가능하게 만들었습니다. 
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-잘못올린 파일 이라면 웹화면에서 삭제후 다른 첨부파일로 업로드가 가능하게 만들었습니다.
+2. 잘못올린 파일 이라면 웹화면에서 삭제후 다른 첨부파일로 업로드가 가능하게 만들었습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">Board Controller</div>
@@ -1113,7 +1105,7 @@ public class BoardController {
 	}
 ```
 <div style="font-size : 15px; margin-bottom: 15px">
-업데이트 로직은 추가 로직과 유사합니다.
+1. 업데이트 로직은 추가 로직과 유사합니다.
 </div>
 
 
@@ -1223,17 +1215,17 @@ ${atb.fname}
 </form>
 ```
 <div style="font-size : 15px; margin-bottom: 7px">
-제목과 내용만 수정하거나 파일만 추가하거나 아니면 둘다 가능하게 만들었습니다.
+1. 제목과 내용만 수정하거나 파일만 추가하거나 아니면 둘다 가능하게 만들었습니다.
 <img src="/assets/images/up1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 
 <div style="font-size : 15px; margin-bottom: 7px">
-X표시를 누르면 첨부물도 정상삭제가 됩니다.
+2. X표시를 누르면 첨부물도 정상삭제가 됩니다.
 </div>
 <img src="/assets/images/up2.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
 <hr>
 <div style="font-size : 15px; margin-bottom: 7px">
-이렇게 이용자의 문의사항을 만들어 보았습니다.
+3. 이렇게 이용자의 문의사항을 만들어 보았습니다.
 </div>
 
 <h3>개발 환경</h3>
