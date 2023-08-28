@@ -40,9 +40,9 @@ public class BoardVO {
 	}
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-게시판을 만들기 위한 컬럼은 총10개로 준비 했습니다.</div>
+1. 게시판을 만들기 위한 컬럼은 총10개로 준비 했습니다.</div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-List-FileVO는 문의사항에 첨부물이 올라갔을 경우이고 List-Comment는 문의사항에 관리자가 답글을 달기위해 만들어 두었습니다.
+2. List-FileVO는 문의사항에 첨부물이 올라갔을 경우이고 List-Comment는 문의사항에 관리자가 답글을 달기위해 만들어 두었습니다.
 </div>
 
 
@@ -64,16 +64,16 @@ List-FileVO는 문의사항에 첨부물이 올라갔을 경우이고 List-Comme
 </insert>
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-문의사항 등록시 사용자가 사진파일을 보낼수 있다는 가정하에 첨부물도 추가할수 있게 만들어서 총 2개의 SQL추가 로직이 필요합니다.
+1. 문의사항 등록시 사용자가 사진파일을 보낼수 있다는 가정하에 첨부물도 추가할수 있게 만들어서 총 2개의 SQL추가 로직이 필요합니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
-SELECT LAST_INSERT_ID는 데이터베이스에서 마지막으로 삽입된 레코드의 자동 생성된 키 값을 가져오는 SQL 문입니다.
+2. SELECT LAST_INSERT_ID는 데이터베이스에서 마지막으로 삽입된 레코드의 자동 생성된 키 값을 가져오는 SQL 문입니다.
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
-selectKey keyProperty="bnum" resultType="int" order=AFTER 이 부분은 데이터베이스에서 생성된 키 값을 반환하기 위해 사용하는 -selectKey- 요소입니다. 
+3. selectKey keyProperty="bnum" resultType="int" order=AFTER 이 부분은 데이터베이스에서 생성된 키 값을 반환하기 위해 사용하는 -selectKey- 요소입니다. 
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-keyProperty는 생성된 키 값을 어떤 프로퍼티에 저장할 지를 지정하며 resultType은 반환되는 키 값의 데이터 타입을 나타냅니다. order는 키 값이 생성된 후에 가져올 것인지 생성 전에 가져올 것인지를 지정합니다.
+4. keyProperty는 생성된 키 값을 어떤 프로퍼티에 저장할 지를 지정하며 resultType은 반환되는 키 값의 데이터 타입을 나타냅니다. order는 키 값이 생성된 후에 가져올 것인지 생성 전에 가져올 것인지를 지정합니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">BoardMapper와 BoardDAO</div>
@@ -780,16 +780,16 @@ public class BoardController {
 		}
 	
 ```
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지를 판단하기 위해 추가 됬습니다.
 </div>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 리스트에서 title을 눌러 문의사항 글에 들어가면 가장 먼저 조회수가 1올라갑니다.
 </div>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 문의사항에 댓글을 달기위해 post방식으로 데이터를 전송을 받습니다. "comlist"는 등록한 댓글을 불러옵니다
 </div>
-<div style="font-size : 17px; margin-bottom: 15px">
+<div style="font-size : 15px; margin-bottom: 15px">
 첨부파일을 다운받을수 있게 로직을 만들었습니다.
 </div>
 
@@ -949,18 +949,18 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
 </c:if>
 ```
 
-<div style="font-size : 17px; margin-bottom: 15px">
+<div style="font-size : 15px; margin-bottom: 15px">
 댓글을 달수 있는건 관리자만 가능하기 때문에 댓글 등록은 관리자한테만 보이게 if문을  사용했습니다.
 </div>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 관리자로 로그인시에는 댓글을 달수있는 칸이 생깁니다
 <img src="/assets/images/de2.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 관리자가 댓글을 달았다면 이런 화면이 보여집니다
 <img src="/assets/images/de.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 첨부파일은 다운받을수 있게 만들었습니다.<br>
 <img src="/assets/images/de3.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
@@ -1112,12 +1112,12 @@ public class BoardController {
 		return map;
 	}
 ```
-<div style="font-size : 17px; margin-bottom: 15px">
+<div style="font-size : 15px; margin-bottom: 15px">
 업데이트 로직은 추가 로직과 유사합니다.
 </div>
 
 
-<div style="font-size : 17px; color:blue; margin-bottom: 7px">Updataform 페이지-jsp</div>
+<div style="font-size : 15px; color:blue; margin-bottom: 7px">Updataform 페이지-jsp</div>
 ```html
 
 function attremove(num,fname){
@@ -1222,17 +1222,17 @@ ${atb.fname}
 <td><div><button id="btnUpload" type="submit">ENTER</button></div></td>
 </form>
 ```
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 제목과 내용만 수정하거나 파일만 추가하거나 아니면 둘다 가능하게 만들었습니다.
 <img src="/assets/images/up1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 X표시를 누르면 첨부물도 정상삭제가 됩니다.
 </div>
 <img src="/assets/images/up2.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
 <hr>
-<div style="font-size : 17px; margin-bottom: 7px">
+<div style="font-size : 15px; margin-bottom: 7px">
 이렇게 이용자의 문의사항을 만들어 보았습니다.
 </div>
 
