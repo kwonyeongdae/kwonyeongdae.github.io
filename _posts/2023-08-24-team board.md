@@ -1223,11 +1223,10 @@ ${atb.fname}
 2. X표시를 누르면 첨부물도 정상삭제가 됩니다.
 </div>
 <img src="/assets/images/up2.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
-<hr>
 <div style="font-size : 15px; margin-bottom: 7px">
 3. 이렇게 이용자의 문의사항을 만들어 보았습니다.
 </div>
-
+----------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>
 

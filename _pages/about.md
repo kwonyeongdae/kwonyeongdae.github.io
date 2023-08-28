@@ -1,5 +1,5 @@
 ---
-title: "↓↓KwonYeongDae↓↓"
+title: "→Introductiona←"
 permalink: /about/
 layout: single
 ---
