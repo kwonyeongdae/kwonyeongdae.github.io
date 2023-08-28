@@ -9,7 +9,7 @@ tags:
   - spring
   - jsp
   - MySQL
-last_modified_at: 2023-08-25 19:23PM
+last_modified_at: 2023-08-28 19:23PM
 ---
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">개발 기간</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray"> 2023-07 ~ 2023-09(3개월)</span></div>
 
@@ -514,7 +514,7 @@ function restfalse(fnum){
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
 1. 휴먼계정은 마이페이지에 휴먼 해체란이 뜹니다. 
-<img src="/assets/images/hu.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/rest.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
