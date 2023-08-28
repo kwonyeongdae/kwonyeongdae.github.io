@@ -294,11 +294,10 @@ function added() {
 </body>
 ```
 <div style="font-size : 15px; margin-bottom: 7px">
-문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력
-되지 않았다면 저장이 되지 않게 만들었습니다.
+문의사항에서 제목과 내용은 빠질수 없기 때문에 javascript로 제목이나 내용이 입력 되지 않았다면 저장이 되지 않게 만들었습니다.</div>
 <img src="/assets/images/con1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="float: left;"/>
 <img src="/assets/images/ti1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck" style ="clear: left;"/><br>
-</div>
+
 <div style="font-size : 15px; margin-bottom: 7px">
 아이디는 세션을 가져오기 때문에 로그인을 한다면 자동으로 아이디를 입력하게 만들었습니다. 
 </div>
@@ -965,11 +964,7 @@ model에 담긴 "user"은 로그인한 이용자가 관리자 인지 아닌지�
 첨부파일은 다운받을수 있게 만들었습니다.<br>
 <img src="/assets/images/de3.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div><br>
-<div style="font-size : 17px; margin-bottom: 15px">
-문의 글을 보기위해선 비밀번호를 입력해야 합니다.<br>
-(일반회원 화면)
-<img src="/assets/images/pass.png" width="800px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
-</div><br>
+
 
 <hr>
 - 업데이트 페이지
@@ -1048,10 +1043,10 @@ public class BoardDao {
 
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-첨부파일만 업데이트가 가능하고, 첨부파일을 제외한 제목, 내용만 수정이 가능하게 만들었습니다. 
+파일만 업데이트가 가능하고, 첨부파일을 제외한 제목, 내용만 수정이 가능하게 만들었습니다. 
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-잘못올린 첨부파일 이라면 웹화면에서 삭제후 다른 첨부파일로 업로드가 가능하게 만들었습니다.
+잘못올린 파일 이라면 웹화면에서 삭제후 다른 첨부파일로 업로드가 가능하게 만들었습니다.
 </div>
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">Board Controller</div>
@@ -1228,7 +1223,7 @@ ${atb.fname}
 </form>
 ```
 <div style="font-size : 17px; margin-bottom: 7px">
-제목과 내용만 수정하거나 첨부파일만 추가하거나 아니면 둘다 가능하게 만들었습니다.
+제목과 내용만 수정하거나 파일만 추가하거나 아니면 둘다 가능하게 만들었습니다.
 <img src="/assets/images/up1.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 
@@ -1237,7 +1232,9 @@ X표시를 누르면 첨부물도 정상삭제가 됩니다.
 </div>
 <img src="/assets/images/up2.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/><br>
 <hr>
-
+<div style="font-size : 17px; margin-bottom: 7px">
+이렇게 이용자의 문의사항을 만들어 보았습니다.
+</div>
 
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>
