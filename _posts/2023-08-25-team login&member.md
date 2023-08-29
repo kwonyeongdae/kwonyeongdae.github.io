@@ -194,7 +194,7 @@ function form_check() {
 ```
 <div style = "font-size : 15px; margin-bottom: 15px">
 1. 아이디와 비밀번호가 조건에 안맞을시 오류문구가 뜹니다.
-<img src="/assets/images/alert.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/alert.png" width="6000px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 ```html
 var isIdChecked = false;
@@ -214,9 +214,9 @@ if (!isIdChecked) {
 1. 아이디와 이메일은 중복체를 해야합니다.
 <img src="/assets/images/idc.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
-<img src="/assets/images/join.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/join.png" width="600px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <div style = "font-size : 15px; margin-bottom: 15px">
-1. 모든 입력란을 채우면 회원가입이 됩니다.
+2. 모든 입력란을 채우면 회원가입이 됩니다.
 </div>
 
 - 회원 수정
@@ -423,9 +423,8 @@ function login(){
         <td><button type="button" onclick="Transfer()" style="width: 70px;">환전</button></td>
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-1. 업로드한 중고책이 팔리면 수수료10%를 제외한 금액은 이용자에게 포인트로 지급되고 책을 구매할때 사용이 가능하거나 출금을 할수 있게 로직을 만들어 봤습니다.<br>
-(은행 시스템은 하지 않음)
-<img src="/assets/images/carrot.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+1. 업로드한 중고책이 팔리면 수수료10%를 제외한 금액은 이용자에게 포인트로 지급되고 책을 구매할때 사용이 가능하거나 출금을 할수 있게 로직을 만들어 봤습니다.(은행 시스템은 하지 않음)<br>
+<img src="/assets/images/carrot.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 ```html
 <!--구매한 책이 맘에 안들경우  -->
@@ -474,11 +473,11 @@ document.addEventListener('DOMContentLoaded', function() {
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
 1. 처음 물건을 구매한다면 이런 상태입니다.
-<img src="/assets/images/ee.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/ee.png" width="500px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 <div style = "font-size : 15px; margin-bottom: 15px">
 2. 타이머는 7일로 설정해서 7일 뒤면 이런 상태가 됩니다
-<img src="/assets/images/ee2.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/ee2.png" width="500px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 
 ```html
@@ -514,7 +513,7 @@ function restfalse(fnum){
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
 1. 휴먼계정은 마이페이지에 휴먼 해체란이 뜹니다. 
-<img src="/assets/images/rest.png" width="400px" height="250px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/rest.png" width="500px" height="450px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
