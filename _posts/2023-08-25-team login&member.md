@@ -78,7 +78,7 @@ public class MemberVO
 <div style = "font-size : 15px; margin-bottom: 7px">
 1. 회원가입시 아이디,이메일등 중복체크를 위한 sql문이 존재합니다.</div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-2. number와 mileage는 디폴트값 0입니다.</div>
+2. insert문의 number와 mileage는 디폴트값 0입니다.</div>
 
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyController</div>
