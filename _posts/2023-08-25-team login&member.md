@@ -24,7 +24,7 @@ last_modified_at: 2023-08-28 19:23PM
 <h3>프로젝트</h3>
 
 - 회원가입기능
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">MemberVO</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">MemberVO</div>
 ```java
 public class MemberVO 
 {
@@ -57,7 +57,7 @@ public class MemberVO
 <div style = "font-size : 15px; margin-bottom: 15px">
 2. number는 회원의 등급을 나타냅니다 0은 일반회원 5는 휴먼계정 9는 관리자 계정으로 했습니다.</div>
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyMapper.xml</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
 ```html
 <insert id="addfairyMem"
      parameterType="com.ezen.spring.board.teampro.login.MemberVO">
@@ -81,7 +81,7 @@ public class MemberVO
 2. number와 mileage는 디폴트값 0입니다.</div>
 
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyController</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyController</div>
 ```java
 @Controller
 @RequestMapping("/fairy")
@@ -113,7 +113,7 @@ public class FairyController
 <div style = "font-size : 15px; margin-bottom: 15px">
 1. 회원가입 로직과 중복체크 로직은 따로 분리했습니다.</div>
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">Joinfrom.jsp</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">Joinfrom.jsp</div>
 ```html
 var isIdChecked = false;
 var isEmailChecked = false;
@@ -221,7 +221,7 @@ if (!isIdChecked) {
 
 - 회원 수정
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyMapper.xml</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
 ```html
 <update id="updatedMem"
       parameterType="com.ezen.spring.board.teampro.login.MemberVO">
@@ -259,7 +259,7 @@ if (!isIdChecked) {
 </div>
 -----------------------------------------------------------------------------
 - 로그인기능
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyMapper.xml</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
 ```html
 <select id="loginCheck" parameterType="com.ezen.spring.board.teampro.login.MemberVO" resultType="com.ezen.spring.board.teampro.login.MemberVO">
       SELECT number FROM fairymem WHERE userid = BINARY #{userid} AND pass = BINARY #{pass}
@@ -295,7 +295,7 @@ if (!isIdChecked) {
 1. 입력받은 아이디와 비밀번호는 SQL문으로 전달됩니다.
 </div>
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">Loginfrom.jsp</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">Loginfrom.jsp</div>
 ```html
 function login(){
 	
@@ -343,7 +343,7 @@ function login(){
 --------------------------------------------------------------------
 - 마이페이지
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyMapper.xml</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
 ```html
 <!--회원정보 가져오기 -->
 <select id="getJoinedMem" parameterType="string" resultType="com.ezen.spring.board.teampro.login.MemberVO">
@@ -373,7 +373,7 @@ function login(){
 2. 직원이 퇴사 했을시 직원의 계정은 휴먼계정으로 전환 됩니다.
 </div>
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyController</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyController</div>
 ```java
 @GetMapping("/mypage/{userid}")
   public String Mypage(@PathVariable String userid,Model model) {
@@ -402,7 +402,7 @@ function login(){
 1. 4가지 SQL실행문을 한 메소드에서 모두 출력하게 됩니다.
 </div>
 
-<div style="font-size : 17px; color:bule; margin-bottom: 7px">mypage.jsp</div>
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">mypage.jsp</div>
 ```html
 <tr>
         <td class="info-label">carrot판매금액:</td>
