@@ -258,7 +258,7 @@ if (!isIdChecked) {
 2. 수정창 자체는 회원가입 창과 거의 유사하기 때문에 따로 설명하지 않겠습니다.
 </div>
 -----------------------------------------------------------------------------
--로그인기능
+- 로그인기능
 <div style="font-size : 17px; color:bule; margin-bottom: 7px">FairyMapper.xml</div>
 ```html
 <select id="loginCheck" parameterType="com.ezen.spring.board.teampro.login.MemberVO" resultType="com.ezen.spring.board.teampro.login.MemberVO">
