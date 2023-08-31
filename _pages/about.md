@@ -16,17 +16,17 @@ layout: single
 </div>
 <div style="font-size:17px; margin-bottom: 5px;">
 - 취미
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ 개발 아이디어 생각하기
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> 개발 아이디어 생각하기
 </div>
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ 코딩공부
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> 코딩공부
 </div>
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ 여행
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> 여행
 </div>
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ 운동
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> 운동
 </div>
 </div>
 <div style="font-size:17px; margin-bottom: 5px;">
@@ -34,14 +34,14 @@ layout: single
 </div>
 <div style="font-size:17px; margin-bottom: 5px;">
 - 언어
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ java 
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> java 
 </div>
-.<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ javascript
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> javascript
 </div>
-<div style="font-size:14px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;▷ python
+<div style="font-size:12px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;> python
 </div>
 </div>
 <hr>
