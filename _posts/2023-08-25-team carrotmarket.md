@@ -251,7 +251,7 @@ function preview(evt) {
 2. 메인사진과 물품 특징사진을 올릴시 function preview 함수로 인해 올려진 사진이 화면에 출력됩니다.<br>
 <img src="/assets/images/add1.png" width="300px" height="800px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
-
+---------------------------------------------------------------------------
 - 중고물품 목록
 
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
@@ -736,163 +736,446 @@ function to_comment() {
 }
 
 <table>
-
-<h3>댓글달기</h3>
-<table>
- <div th:each="item : ${com}">
+ <h3>댓글달기</h3>
+ <table>
+  <div th:each="item : ${com}">
    <tr>
-     <td>
-       <input type="hidden" id="num" name="num" >
-	 <script>
-	   var titleFromServer = "[[${item.num}]]"; 
+    <td>
+       <script>
+	var titleFromServer = "[[${item.num}]]"; 
 		        
-	   var titleElement = document.getElementById("num");
-	       titleElement.value = titleFromServer;
-	 </script>
-         [[${item.userid}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         [[${item.comment}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <span th:text="${#dates.format(item['cardata'], 'yyyy-MM-dd')}"></span>
-     </td>
-   </tr>
+	var titleElement = document.getElementById("num");
+	titleElement.value = titleFromServer;
+       </script>
+		   		
+       [[${item.userid}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       [[${item.comment}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <span th:text="${#dates.format(item['cardata'], 'yyyy-MM-dd')}"></span>      
+   </td>
+  </tr>
     
  <div th:each="itemto : ${comto}">   
    <tr th:if="${item.num == itemto.dcarnum}">
      <td>
-       <input type="hidden" id="dcarnum" name="dcarnum" >
-	 <script>
-	    var titleFromServer = "[[${itemto.dcarnum}]]"; 
-		        
-	    var titleElement = document.getElementById("dcarnum");
-	        titleElement.value = titleFromServer;
-	 </script>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			 	 &nbsp;[[${itemto.duserid}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+	 [[${itemto.duserid}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          [[${itemto.dcomment}]]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <span th:text="${#dates.format(itemto['dcardata'], 'yyyy-MM-dd')}"></span>
      </td>
    </tr>
- </div>
+</div>
 
- <tr>
-   <td>
+<tr>
+  <td>
     <input type="text" id ="dcomment" name = "dcomment" style="width: 500px; padding: 3px;">
-    <button type="button" onclick="javascript:to_comment()">등록</button>
-   </td>
- </tr>
+    <button type="button" th:attr="onclick='to_comment(\'' + ${item.num} + '\')'">등록</button>
+  </td>
+</tr>
 </div>
 
 </table>
-<from id ="addcom">
+  <from id ="addcom">
 	<input type="hidden" id ="userid" name = "userid">
 	<script>
-        var titleFromServer = "[[${userid}]]"; 
+        var userFromServer = "[[${userid}]]"; 
         
-        var titleElement = document.getElementById("userid");
-        titleElement.value = titleFromServer;
+        var userElement = document.getElementById("userid");
+        userElement.value = userFromServer;
    	</script>
 	<input type="text" id ="comment" name = "comment" style="width: 500px; padding: 3px;">
 	<button type="button" onclick="javascript:comment()">등록</button>
-</from>
+  </from>
 </table>
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-1. 위의 detail중 controller에서 model에 담긴 comto와 com은 여기서 사용됩니다.<br>
+1. 댓글과 답글을 테스트 해보았습니다.<br>
 <img src="/assets/images/comment.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 <div style = "font-size : 15px; margin-bottom: 7px">
 2. 위의 detail중 controller에서 model에 담긴 comto와 com은 여기서 사용됩니다.<br>
-<img src="/assets/images/carrot.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/comto.png" width="400px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
+
+-----------------------------------------------------------------------------
+
+- 수정 기능
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">CarrotMapper.xml</div>
 ```html
-<!--구매한 책이 맘에 안들경우  -->
-<td><c:if test="${book.statu == 0 }">
-          <button type="button" id="changeButton" onclick="clickTrans(${book.num})">교환/환불신청</button>
-          <button type="button" id="okButton" onclick="okbuy(${book.num})" style="display: none;"></button>
-          </c:if>
-          <c:if test="${book.statu == 1 }">
-          	<div id="statusText">수령완료</div>
-          	</c:if>
-          	</td>
-<!-- 교환/환불신청 을 누를경우 페이지가 넘어감-->
-function clickTrans(num){
-	if(!confirm("교환/반품을 신청하시겠습니까?"))return;
-	location.href = "/fairy/cart/change/" + num;
+
+<!-- 수정SQL 로직 입니다 -->
+<update id="updatecarrot" parameterType="com.ezen.spring.board.teampro.carrotmarket.CarrotVO">
+    UPDATE test.carrot
+    SET
+        <if test="cvrimg != null">
+            cvrimg = #{cvrimg},
+        </if>
+        price = #{price},
+        title = #{title},
+        content = #{content}
+    WHERE cnum = #{cnum}
+</update>
+
+<!-- 특징사진 삭제 로직 입니다 -->
+<delete id="delattach" parameterType="Integer">
+DELETE FROM test.carrotattach WHERE num = #{num}
+</delete>
+```
+<div style = "font-size : 15px; margin-bottom: 7px">
+1. 사진변경시를 위한 삭제로직 필요합니다.</div>
+
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">CarrotDAO와CarrotController</div>
+```java
+@Component("carrotdao")
+public class CarrotDAO {
 	
+	@Autowired
+	@Qualifier("carrotmapper")
+	CarrotMapper carrotmapper;
+	//수정 로직
+	public boolean updateCarrot(CarrotVO cv,int cnum)
+	{
+		boolean bSaved = carrotmapper.updatecarrot(cv)>0;
+		
+	
+		List<CarrotAttach> list = cv.getClist();
+		if (list != null && !list.isEmpty()) {
+			 for (int i = 0; i < list.size(); i++) {
+		         list.get(i).setCnum(cnum);
+		        }
+		    	boolean att = carrotmapper.addcarrotfile(cv.getClist())> 0;
+			        if (!bSaved) {
+			            return false;
+			        }
+		    }
+		    return bSaved;
+		
+	}
+	//사진 삭제로직
+	public boolean deleteatt(int num) {
+		return carrotmapper.delattach(num)>0;
+	}
 }
 
-<!--보통의 이용자는 구매확정버튼을 누르지 않기 떄문에 자동 구매확정을 누르게 설정함 -->
-function okbuy(num){
-    var obj = {
-         'num' : num,
-	};
-    
-    $.ajax({
-		url:'/fairy/cart/ok',
-		method:'post',
-		data: obj,
-		cache:false,
-		dataType:'json',
-		success:function(res) {
-		},
-		error:function(xhr,status,err){
-			alert(status + "/" + err);
-		}
-	});
-<!--구매확정 버튼을 자동으로 누르게 타이머를 설정함 -->
-function simulateOkButtonClick() {
-    var okButton = document.getElementById('okButton');
-    okButton.click(); // 클릭 동작을 수행
-}
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(simulateOkButtonClick, 7 * 24 * 60 * 60 * 1000);//7일 뒤 수령하는로직
-});
-}
+@Controller
+@RequestMapping("/carrot")
+@SessionAttributes("userid")
+public class CarrotController {
+
+   @Autowired
+   @Qualifier("carrotdao")
+    CarrotDAO dao;
+
+   @PostMapping("/update")
+    @ResponseBody
+       public Map<String, Object> updatecarrot(@SessionAttribute(name = "userid", required = false)String userid,
+    		   									@RequestParam(value ="file1", required=false) MultipartFile cvrimg,
+    		   									@RequestParam(value ="file2", required=false) MultipartFile[] contimg1,
+    		   									CarrotVO cv,HttpServletRequest request,@RequestParam int cnum) 
+      {
+		
+
+      Map<String, Object> map = new HashMap<>();
+      ServletContext context = request.getServletContext();
+      String savePath = context.getRealPath("/carrot");
+      List<CarrotAttach> filelist = new ArrayList<>();
+      
+           try {	
+        	 if(cvrimg != null && !cvrimg.isEmpty()) 
+		{
+                 String fileName = cvrimg.getOriginalFilename();
+
+                 cvrimg.transferTo(new File(savePath + "/" + fileName));
+
+                 String cType = cvrimg.getContentType();
+                 String pName = cvrimg.getName();
+                 Resource res = cvrimg.getResource();
+                 long fSize = cvrimg.getSize();
+
+                 cv.setCvrimg(fileName);
+                 cv.setImgsize(fSize/1024);
+                 cv.setImgtype(cType);
+                 boolean empty = cvrimg.isEmpty();
+//--------------------------------conimg1-------------------------------------------------------------   
+//--------------------------------conimg1-------------------------------------------------------------   
+               for(int i=0;i<contimg1.length;i++) {
+	                if (contimg1[i].getSize() == 0) continue;
+	               CarrotAttach ca = new CarrotAttach();
+
+	               String contentName1 = contimg1[i].getOriginalFilename();
+
+	               contimg1[i].transferTo(new File(savePath + "/" + contentName1));
+
+	               String conType1 = contimg1[i].getContentType();
+	               String conName1 = contimg1[i].getName();
+	               Resource con1 = contimg1[i].getResource();
+	               long conSize1 = contimg1[i].getSize();
+	               boolean cont1 = contimg1[i].isEmpty();
+	               
+	               ca.setContimg1(contentName1);
+	               ca.setContsize1(conSize1/1024);
+	               ca.setConttype1(conType1);
+ 
+	               filelist.add(ca);
+                       }  
+	       cv.setClist(filelist);
+
+	       boolean update = dao.updateCarrot(cv,cnum);
+	       map.put("updated", update);
+               }else if(contimg1 != null && !contimg1[0].isEmpty()) {
+        		   for(int i=0;i<contimg1.length;i++) {
+
+      	               		CarrotAttach ca = new CarrotAttach();
+
+      	                        String contentName1 = contimg1[i].getOriginalFilename();
+
+      	        		contimg1[i].transferTo(new File(savePath + "/" + contentName1));
+
+      	            		String conType1 = contimg1[i].getContentType();
+      	               		String conName1 = contimg1[i].getName();
+      	               		Resource con1 = contimg1[i].getResource();
+      	               		long conSize1 = contimg1[i].getSize();
+      	               		boolean cont1 = contimg1[i].isEmpty();
+      	               
+      	               		ca.setContimg1(contentName1);
+      	               		ca.setContsize1(conSize1/1024);
+      	               		ca.setConttype1(conType1);
+       
+      	               		filelist.add(ca);
+                     		}  
+      	        	  cv.setClist(filelist);
+
+      	        	  boolean update = dao.updateCarrot(cv,cnum);
+      	        	  map.put("updated", update);
+        	   }else {
+   	        	  boolean update = dao.updateCarrot(cv,cnum);
+   	        	  map.put("updated", update);
+        	   }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+           return map;
+   }
+	
+	@PostMapping("/del")//첨부물 삭제로직
+	@ResponseBody
+	public Map<String,Boolean> delatt(@RequestParam int num){
+		Map<String,Boolean> map = new HashMap<>();
+		map.put("delete", dao.deleteatt(num));
+		return map;
+	}
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
-1. 처음 물건을 구매한다면 이런 상태입니다.
-<img src="/assets/images/ee.png" width="500px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
-</div>
+1. 추가 로직과 유사하지만 추가된 첨부파일이 없다면  중간에 conimg1쪽로직은 실행되지 않습니다.</div>
 <div style = "font-size : 15px; margin-bottom: 15px">
-2. 타이머는 7일로 설정해서 7일 뒤면 이런 상태가 됩니다
-<img src="/assets/images/ee2.png" width="500px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
-</div>
+2. 반대로 추가가 됬다면.사진까지 추가되는 로직이 실행됩니다.</div>
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">Updatefrom.html</div>
 
 ```html
-function restfalse(fnum){
-	 if(!confirm("휴먼계정을 해체하시겠습니까?"))return;
-	 
-	 var obj = {};
-		obj.fnum = fnum;
+<!--대체로 추가기능과 유사하기 때문에 짧게 특징만 보여드리겠습니다 -->
+<div th:each="img : ${up}">
+    <div th:if="${up[0].contimg1.length() > 0}">
+         img th:src="@{'/carrot/' + ${img.contimg1}}" style="max-width: 100px; max-height: 100px;">
+         <a th:href="'javascript:attremove(' + ${img.num} + ');'" title="첨부파일 삭제">[X]<br></a>
+    </div>
+</div>
+
+<!-- 서버에서 받아온 list의 size만큼 동적으로 사진업로드 input이 생성됩니다. -->
+<div th:switch="${up.size()}"> 
+    <th:block th:case="0">
+	
+    <label for="file2">이미지1</label>
+    <input type="file" id="file2" name="file2" onchange="preview1(event);">
+    <div id="thumbnail_view1">
+        <span>Preview Image</span>
+    </div>
+        <label for="file2">이미지2</label>
+        <input type="file" id="file3" name="file2" onchange="preview2(event);">
+        <div id="thumbnail_view2">
+            <span>Preview Image</span>
+        </div>
+        
+        <label for="file2">이미지3</label>
+        <input type="file" id="file4" name="file2" onchange="preview3(event);">
+        <div id="thumbnail_view3">
+            <span>Preview Image</span>
+        </div>
+        
+        <label for="file2">이미지4</label>
+        <input type="file" id="file5" name="file2" onchange="preview4(event);">
+        <div id="thumbnail_view4">
+            <span>Preview Image</span>
+        </div>
+    </th:block>
+<!-- 사진 업데이트시 사진이 1개만 있다면 -->     
+    <th:block th:case="1">
+        <label for="file2">이미지2</label>
+        <input type="file" id="file3" name="file2" onchange="preview2(event);">
+        <div id="thumbnail_view2">
+            <span>Preview Image</span>
+        </div>
+        
+        <label for="file2">이미지3</label>
+        <input type="file" id="file4" name="file2" onchange="preview3(event);">
+        <div id="thumbnail_view3">
+            <span>Preview Image</span>
+        </div>
+        
+        <label for="file2">이미지4</label>
+        <input type="file" id="file5" name="file2" onchange="preview4(event);">
+        <div id="thumbnail_view4">
+            <span>Preview Image</span>
+        </div>
+    </th:block>
+
+<!-- 사진 업데이트시 사진이 2개만 있다면 -->     
+    <th:block th:case="2">
+        <label for="file2">이미지3</label>
+        <input type="file" id="file4" name="file2" onchange="preview3(event);">
+        <div id="thumbnail_view3">
+            <span>Preview Image</span>
+        </div>
+        
+        <label for="file2">이미지4</label>
+        <input type="file" id="file5" name="file2" onchange="preview4(event);">
+        <div id="thumbnail_view4">
+            <span>Preview Image</span>
+        </div>
+    </th:block>
+
+<!--사진 업데이트시 사진이 3개만 있다면 -->      
+    <th:block th:case="*">
+        <label for="file2">이미지4</label>
+        <input type="file" id="file5" name="file2" onchange="preview4(event);">
+        <div id="thumbnail_view4">
+            <span>Preview Image</span>
+        </div>
+    </th:block>
+</div>
+ ```
+<div style = "font-size : 15px; margin-bottom: 15px">
+1. 만약 사진이 3장이 이미 존재한다면 동적으로 1개의 사진 추가칸이 뜹니다.
+<img src="/assets/images/cup1.png" width="300px" height="800px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+</div>
+-----------------------------------------------------------------------------
+
+- 삭제기능
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">FairyMapper.xml</div>
+```html
+
+<!-- 로그인한 이용자가 올린 중고책 목록을 불러옵니다 -->
+<select id="get_to_my" resultType="com.ezen.spring.board.teampro.carrotmarket.CarrotVO" parameterType="String">
+SELECT * FROM carrot WHERE userid = #{userid}
+</select>
+
+<!-- 삭제SQL문 입니다 -->
+<delete id="delcarrot" parameterType="Integer">
+DELETE FROM test.carrot WHERE cnum = #{cnum}
+</delete>
+
+<delete id="delcarrot_att" parameterType="Integer">
+DELETE FROM test.carrotattach WHERE cnum = #{cnum}
+</delete>
+```
+<div style = "font-size : 15px; margin-bottom: 15px">
+1. 우선 이용자의 중고책 목록을 불러옵니다.
+</div>
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">CarrotDAO와CarrotController</div>
+```java
+
+@Component("carrotdao")
+public class CarrotDAO {
+	
+	@Autowired
+	@Qualifier("carrotmapper")
+	CarrotMapper carrotmapper;
+
+	public List<Map> mypage(String userid){
+	      List<Map> page = carrotmapper.get_to_my(userid);
+	      return page;
+	   }
+
+	public boolean All_del(int cnum) {
+		boolean carrotatt = carrotmapper.delcarrot_att(cnum)>0;
+		boolean carrot = carrotmapper.delcarrot(cnum)>0;
+		return carrotatt&&carrot;
+	}
+}
+
+@Controller
+@RequestMapping("/carrot")
+@SessionAttributes("userid")
+public class CarrotController {
+
+   @Autowired
+   @Qualifier("carrotdao")
+    CarrotDAO dao;
+
+   //이용자의 중고책 목록을 불러옵니다.
+	@GetMapping("/mypage")
+	public String mypage(@SessionAttribute(name = "userid", required = false)String userid,Model model) {
+		List<Map> mylist = dao.mypage(userid);
+		model.addAttribute("my",mylist);
+		return "thymeleaf/carrot/mylist";
+	}
+	
+	//원하는 물품을 삭제하는 로직입니다.
+	@PostMapping("/Alldel")
+	@ResponseBody
+	public Map<String,Boolean> interestadd(int cnum){
+		Map<String,Boolean> map = new HashMap<>();
 		
-	 $.ajax({
-		url:'/fairy/restesc',
-		method:'post',
-		data: obj,
-		cache:false,
-		dataType:'json',
-		success:function(res) {
-			if (res.restout) {
-				alert('휴먼계정이 해제되었습니다');
-				location.href = "/book/list/page/1";
-			}
-		},
-		error:function(xhr,status,err){
-			alert(status + "/" + err);
-		}
+		map.put("remove", dao.All_del(cnum));
+		return map;
+	}
+}
+```
+<div style = "font-size : 15px; margin-bottom: 15px">
+1. 목록을 불러온후 웹화면에서 삭제가 가능합니다.</div>
+
+<div style="font-size : 17px; color:blue; margin-bottom: 7px">List.html</div>
+```html
+<!-- 해당 기능에 대한 코드만 올리겟습니다. -->
+function del(cnum){
+	if (!confirm("물품을 삭제겠습니까?")) {
+	    return false;
+	}
+	var obj = {};
+	obj.cnum = cnum;
+
+	$.ajax({
+	    url: '/carrot/Alldel',
+	    data:obj,
+	    method: 'post',
+	    cache: false,
+	    dataType: 'json',  
+	    success: function(res) {
+	    	var message = res.remove ? "삭제 성공" : "삭제 실패";
+	        alert(message);
+	        	location.reload();
+	        
+	    },
+	    error: function(err) {
+	        alert('에러: ' + err);
+	    }
 	});
 }
 
-<tr>
-   <c:if test="${member.number eq 5}">
-        <th colspan="2" class="info-label"><button type="button" onclick="restfalse(${member.fnum})" >휴면해제</button></th>
-    </c:if>
-</tr>
-```
-<div style = "font-size : 15px; margin-bottom: 7px">
-1. 휴먼계정은 마이페이지에 휴먼 해체란이 뜹니다. 
-<img src="/assets/images/rest.png" width="500px" height="450px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<button type="button" th:attr="onclick='del(\'' + ${item.cnum} + '\')'">삭제</button>
+
+ ```
+<div style = "font-size : 15px; margin-bottom: 15px">
+1. 모든 삭제로직은 어려울 것 없이 SQL문과 필요한 컬럼만 서버로 넘겨주면 쉽게 작동합니다.<br> 
+<img src="/assets/images/cdel.png" width="800px" height="200px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
-<div style = "font-size : 17px; margin-bottom: 7px">
-END</div>
+
+<div style = "font-size : 20px; color:red; margin-bottom: 15px">
+END
+</div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, Thymeleaf, JavaScript</span></div>

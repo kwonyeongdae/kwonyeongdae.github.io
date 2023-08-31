@@ -279,8 +279,9 @@ public class AdmainController
 <img src="/assets/images/year.png" width="800px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <img src="/assets/images/ids.png" width="800px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
-<div style = "font-size : 17px; margin-bottom: 7px">
-END</div>
+<div style = "font-size : 20px; color:red; margin-bottom: 15px">
+END
+</div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>
