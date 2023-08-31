@@ -45,9 +45,9 @@ layout: single
 </div>
 </div>
 <hr>
-
-안녕하세요. 발전하는 개발자 권영대 입니다.<br>
-
+<div style="font-size:20px; margin-bottom: 5px;">
+안녕하세요. 발전하는 개발자 권영대 입니다.
+</div>
 - 성장과정
 <div style="font-size:20px; margin-bottom: 5px;">
 [결과로써 노력의 과정을 증명하는 사람]
