@@ -4,7 +4,7 @@ main:
     url: https://kwonyeongdae.github.io/
   - title: "introduction"
     url: /about/
-  - title: "portfolio"
-    url: /photo/ 
   - title: "projects"
     url: /categories/
+  - title: "study"
+    url: /photo/ 
