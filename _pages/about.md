@@ -16,18 +16,21 @@ layout: single
 </div>
 <div style="font-size:17px; margin-bottom: 5px;">
 - 취미
-</div>
 <div style="font-size:14px; margin-bottom: 5px;">
     + 개발 아이디어 생각하기
     + 코딩공부
     + 여행
     + 운동
 </div>
+</div>
+<div style="font-size:17px; margin-bottom: 5px;">
+- ISTJ
+</div>
 <div style="font-size:17px; margin-bottom: 5px;">
 - 언어
-</div>
 <div style="font-size:14px; margin-bottom: 5px;">
     + java, javascript, python
+</div>
 </div>
 <hr>
 
