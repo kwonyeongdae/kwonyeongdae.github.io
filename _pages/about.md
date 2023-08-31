@@ -4,18 +4,31 @@ permalink: /about/
 layout: single
 ---
 
-## #About Me#
+### #About Me#
+<div style="font-size:17px; margin-bottom: 5px;">
 - 92년 출생
+</div>
+<div style="font-size:17px; margin-bottom: 5px;">
 - 고등학교 졸업
+</div>
+<div style="font-size:17px; margin-bottom: 5px;">
 - 국비지원학원 수료(python,java,spring기반 빅데이터 SW개발자 양성)
+</div>
+<div style="font-size:17px; margin-bottom: 5px;">
 - 취미
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
     + 개발 아이디어 생각하기
     + 코딩공부
     + 여행
     + 운동
-
+</div>
+<div style="font-size:17px; margin-bottom: 5px;">
 - 언어
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
     + java, javascript, python
+</div>
 <hr>
 
 안녕하세요. 발전하는 개발자 권영대 입니다.<br>
@@ -33,9 +46,12 @@ layout: single
 그 결과 예상보다 많은 매출이 나온 것을 보고 노력은 배신하지 않는다는 걸 몸소 깨달았습니다.<br>
 </div>
 <div style="font-size:13px">
-무엇인가 배운다는 것을 좋아했지만 6개월 전 처음 프로그래밍을 배울 때 정말 내가 이걸 할 수 있을까? 라는 의문이 들었습니다.<br>
+무엇인가 배운다는 것을 좋아했지만 6개월 전 처음 프로그래밍을 배울 때 정말 내가 이걸 할 수 있을까?<br>
+라는 의문이 들었습니다.<br>
 하지만 이전의 경험을 통해 안되면 될 때까지 잠을 줄이며 공부에 매진했습니다.<br>
 그 결과 팀 프로젝트를 시작하면서 팀장이 되었고 팀원들과 협업하면서 스스로 성장함을 느꼈습니다.<br>
-이전에는 잘 몰랐던 것들이 어느덧 쉽게 느껴졌고 개발에 대한 자신감과 팀원들과의 팀워크라는 것도 배우게 됐습니다.<br>
+이전에는 잘 몰랐던 것들이 쉽게 느껴졌고 개발에 대한 자신감과 팀원들과의 팀워크라는 것도 배우게 됐습니다.<br>
+</div>
+<div style="font-size:13px">
 이러한 경험을 통해 소프트웨어 개발 시 사용자의 입장도 고려하고 팀원들의 입장도 고려하며 협업하는 개발자가 될 것이라 자신합니다.<br>
 </div>
