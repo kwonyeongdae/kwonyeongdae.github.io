@@ -20,8 +20,11 @@ layout: single
 
 안녕하세요. 발전하는 개발자 권영대 입니다.<br>
 
-- 성장과정<br>
+- 성장과정
+<div style="font-size:20px; margin-bottom: 5px;">
 [결과로써 노력의 과정을 증명하는 사람]
+</div>
+
 <div style="font-size:13px; margin-bottom: 7px;">
 고등학교 졸업 후 20살 때부터 일을 시작하며 주위 친구들보다 사회에 먼저 발을 들였습니다.<br>
 사회에서 여러 가지 일을 하면서 배운 건 '노력의 과정만큼 그에 맞는 결과를 만든다'였습니다.<br>
