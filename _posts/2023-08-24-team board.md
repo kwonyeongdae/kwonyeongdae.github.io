@@ -1226,6 +1226,8 @@ ${atb.fname}
 <div style="font-size : 15px; margin-bottom: 7px">
 3. 이렇게 이용자의 문의사항을 만들어 보았습니다.
 </div>
+<div style = "font-size : 17px; margin-bottom: 7px">
+END</div>
 ----------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>

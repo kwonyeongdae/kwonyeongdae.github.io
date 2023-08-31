@@ -24,6 +24,7 @@ last_modified_at: 2023-08-28 19:23PM
 <h3>프로젝트</h3>
 
 - 회원가입기능
+
 <div style="font-size : 17px; color:blue; margin-bottom: 7px">MemberVO</div>
 ```java
 public class MemberVO 
@@ -365,6 +366,10 @@ function login(){
 <update id="restEsc" parameterType="com.ezen.spring.board.teampro.login.MemberVO">
     UPDATE fairymem SET number=0 WHERE fnum=#{fnum}
 </update>
+<!-- 책 구매후 교환/반품을 안할시  -->
+<update id="OkBuy" parameterType="com.ezen.spring.board.teampro.cart.BookVO">
+UPDATE test.boughtbook SET statu = 1 WHERE num = #{num}
+</update>
 ```
 <div style = "font-size : 15px; margin-bottom: 7px">
 1. 마이페이지에는 이용자의 정보와 상품 구매내역, 중고상품 구매내역, 중고상품 판매내역 등이 출력됩니다.
@@ -515,6 +520,8 @@ function restfalse(fnum){
 1. 휴먼계정은 마이페이지에 휴먼 해체란이 뜹니다. 
 <img src="/assets/images/rest.png" width="500px" height="450px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
+<div style = "font-size : 17px; margin-bottom: 7px">
+END</div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>

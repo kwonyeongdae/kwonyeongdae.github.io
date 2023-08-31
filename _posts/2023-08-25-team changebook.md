@@ -149,8 +149,8 @@ function clickTrans(num){
 <div style = "font-size : 15px; margin-bottom: 15px">
 1. 만약 교환/반품을하게 된다면 데이터베이스에 저장된 해당 결제항목은 삭제됩니다.
 </div>
-
-이상 거래/교환/환불 방식에 대해 알아보았습니다.
+<div style = "font-size : 17px; margin-bottom: 7px">
+END</div>
 -----------------------------------------------------------------------------
 <h3>개발 환경</h3>
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">언어</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">Java(JDK17), HTML/CSS/JSP, JavaScript, Python</span></div>
