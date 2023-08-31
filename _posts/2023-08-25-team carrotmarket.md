@@ -1,5 +1,5 @@
 ---
-title:  "첫번째 팀 프로젝트 - 판매자간 C2C 페이지"
+title:  "개인 프로젝트 - 판매자간 C2C 페이지"
 excerpt: "아동용 책판매 쇼핑몰 - 판매자간 C2C"
 
 categories:
@@ -23,6 +23,8 @@ last_modified_at: 2023-08-31 19:14PM
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">전체 코드&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://github.com/kwonyeongdae/portfolio/tree/main/Carrot" style="text-decoration: none;"> github 보러가기</a></div>
 ----------------------------------------------------
 <h3>프로젝트</h3>
+<div style = "font-size : 17px; margin-bottom: 15px">
+1. 개인 프로젝트지만 팀 프로젝트와 결합 했습니다..</div>
 
 - 회원가입기능
 

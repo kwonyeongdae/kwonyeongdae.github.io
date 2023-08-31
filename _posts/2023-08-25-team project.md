@@ -21,44 +21,44 @@ last_modified_at: 2023-08-28 19:23PM
 ----------------------------------------------------------------------------
 <h3 style ="text-align: center;">프로젝트</h3>
 - 기획 의도
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; margin-bottom: 7px">
 팀원들과 여러가지 아이디어를 공유하던 도중 아동만을 위한 도서를 판매하는 사이트를 만드는것이 어떨까 라는 생각에 추진하게 되었습니다.
 </div>
-<div style = "font-size : 7px; color:red; margin-bottom: 20px">
+<div style = "font-size : 15px; margin-bottom: 20px">
 아동 연령별로 부모가 읽어 주거나 스스로 읽을수 있는 책등이 모두 다르지만 아이가 커가면서 쓸모 없어진 아동도서를 중고로 재판매 할수 있는 기능이 있다면 좋지 않을까?
 라는 생각으로 B2C와 C2C를 이용한 프로젝트를 기획 했습니다.
 </div>
 
 - 기여도
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">1. 로그인 및 회원 관리(기여도 30%) 프론트엔드 -jsp(기여도 30%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">2. 책 판매 페이지 개발(기여도 80%) 프론트엔드-jsp(기여도 80%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">3. 판매자간 C2C 페이지 개발(기여도 100%) 프론트엔드-html(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">4. 장바구니&결제 페이지 개발(기여도 100%) 프론트엔드 -jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">5. 거래/교환/환불 기능(기여도 100%) 프론트엔드 -jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">6. 관리자 페이지 개발(기여도 100%) 프론트엔드-jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">7. 문의사항 페이지 개발(기여도 100%) 프론드엔드-jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 7px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px">
 <span style="color:gray">8. 관리자 페이지 개발(기여도 100%) 프론트엔드-jsp(기여도 100%)</span>
 </div>
 
