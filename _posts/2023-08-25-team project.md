@@ -38,27 +38,27 @@ last_modified_at: 2023-08-28 19:23PM
 <span style="color:gray">2. 책 판매 페이지 개발(기여도 80%) 프론트엔드-jsp(기여도 80%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">3. 판매자간 C2C 페이지 개발(기여도 100%) 프론트엔드-html(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">4. 장바구니&결제 페이지 개발(기여도 100%) 프론트엔드 -jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">5. 거래/교환/환불 기능(기여도 100%) 프론트엔드 -jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">6. 관리자 페이지 개발(기여도 100%) 프론트엔드-jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">7. 문의사항 페이지 개발(기여도 100%) 프론드엔드-jsp(기여도 100%)</span>
 </div>
 
-<div style = "font-size : 15px; color:red; margin-bottom: 7px">
+<div style = "font-size : 15px; color:red; margin-bottom: 7px;">
 <span style="color:gray">8. 관리자 페이지 개발(기여도 100%) 프론트엔드-jsp(기여도 100%)</span>
 </div>
 
