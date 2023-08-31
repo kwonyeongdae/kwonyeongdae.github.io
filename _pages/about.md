@@ -17,10 +17,16 @@ layout: single
 <div style="font-size:17px; margin-bottom: 5px;">
 - 취미
 <div style="font-size:14px; margin-bottom: 5px;">
-  - 개발 아이디어 생각하기
-  - 코딩공부
-  - 여행
-  - 운동
+&nbsp;&nbsp;&nbsp;&nbsp;▷ 개발 아이디어 생각하기
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;▷ 코딩공부
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;▷ 여행
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;▷ 운동
 </div>
 </div>
 <div style="font-size:17px; margin-bottom: 5px;">
@@ -29,7 +35,13 @@ layout: single
 <div style="font-size:17px; margin-bottom: 5px;">
 - 언어
 <div style="font-size:14px; margin-bottom: 5px;">
-    + java, javascript, python
+&nbsp;&nbsp;&nbsp;&nbsp;▷ java 
+</div>
+.<div style="font-size:14px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;▷ javascript
+</div>
+<div style="font-size:14px; margin-bottom: 5px;">
+&nbsp;&nbsp;&nbsp;&nbsp;▷ python
 </div>
 </div>
 <hr>
