@@ -19,7 +19,7 @@ last_modified_at: 2023-08-28 19:23PM
 
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">전체 코드&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://github.com/kwonyeongdae/portfolio" style="text-decoration: none;"> github 보러가기</a></div>
 
-<div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><iframe src="https://drive.google.com/file/d/1SdlCLc1zqSqe4J7mVrVpblnUO775j-uG/view?usp=sharing" width="600" height="400"></iframe> </div>
+
 ----------------------------------------------------------------------------
 <h3 style ="text-align: center;">프로젝트</h3>
 - 기획 의도
@@ -67,6 +67,8 @@ last_modified_at: 2023-08-28 19:23PM
 - ERD 설계
 <img src="/assets/images/st.png" width="800px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 <div style = "font-size : 20px; color:red; margin-bottom: 15px">
+
+<div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><embed src="/assets/images/abc.pdf" width="500" height="600" type="application/pdf"></div>
 
 
 END
