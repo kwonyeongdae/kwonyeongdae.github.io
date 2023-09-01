@@ -19,7 +19,7 @@ last_modified_at: 2023-08-28 19:23PM
 
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">전체 코드&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://github.com/kwonyeongdae/portfolio" style="text-decoration: none;"> github 보러가기</a></div>
 
-<div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><iframe src="/assets/images/ppt.ppt" width="600" height="400"></iframe> </div>
+<div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><iframe src="https://github.com/kwonyeongdae/kwonyeongdae.github.io/tree/main/assets/images/ppt.pptx" width="600" height="400"></iframe> </div>
 ----------------------------------------------------------------------------
 <h3 style ="text-align: center;">프로젝트</h3>
 - 기획 의도
@@ -57,7 +57,7 @@ last_modified_at: 2023-08-28 19:23PM
 </div>
 
 <div style = "font-size : 15px; color:red; margin-bottom: 7px;">
-<span style="color:gray">7. 문의사항 페이지 개발(기여도 100%) 프론드엔드-jsp(기여도 100%)</span>
+<span style="color:gray">7. 문의사항 페이지 개발(기여도 50%) 프론드엔드-jsp(기여도 50%)</span>
 </div>
 
 <div style = "font-size : 15px; color:red; margin-bottom: 7px;">
