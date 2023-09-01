@@ -18,6 +18,8 @@ last_modified_at: 2023-08-28 19:23PM
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold;">개발인원</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:gray">4명(팀장)</span></div>
 
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">전체 코드&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="https://github.com/kwonyeongdae/portfolio" style="text-decoration: none;"> github 보러가기</a></div>
+
+<div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><iframe src="/assets/images/ppt.pptx" width="600" height="400">프로젝트 ppt</iframe> </div>
 ----------------------------------------------------------------------------
 <h3 style ="text-align: center;">프로젝트</h3>
 - 기획 의도
