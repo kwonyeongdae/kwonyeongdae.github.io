@@ -41,7 +41,7 @@ layout: single
 &nbsp;&nbsp;&nbsp;&nbsp;> javascript
 </div>
 <div style="font-size:12px; margin-bottom: 5px;">
-&nbsp;&nbsp;&nbsp;&nbsp;> python
+&nbsp;&nbsp;&nbsp;&nbsp;> python(기초)
 </div>
 </div>
 <hr>
