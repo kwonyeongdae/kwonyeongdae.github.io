@@ -64,12 +64,8 @@ last_modified_at: 2023-08-28 19:23PM
 <span style="color:gray">8. 관리자 페이지 개발(기여도 100%) 프론트엔드-jsp(기여도 100%)</span>
 </div>
 
-- ERD 설계
-<img src="/assets/images/st.png" width="800px" height="400px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
-<div style = "font-size : 20px; color:red; margin-bottom: 15px">
-<!-- ppt자료 pdf로 바꾼후 경로에 파일 명만 주면됨
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><embed src="/assets/images/project.pdf" width="500" height="600" type="application/pdf"></div>
--->
+
 
 END
 </div>
