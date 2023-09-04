@@ -67,6 +67,7 @@ last_modified_at: 2023-08-28 19:23PM
 <div style = "font-size : 15px; margin-bottom: 10px;"><span style="font-weight: bold; ">PPT자료첨부&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><embed src="/assets/images/project.pdf" width="1000" height="600" type="application/pdf"></div>
 
 
+<div style = "font-size : 20px; color:red; margin-bottom: 15px">
 END
 </div>
 -----------------------------------------------------------------------------
