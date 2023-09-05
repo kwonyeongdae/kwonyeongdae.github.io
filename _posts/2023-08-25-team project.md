@@ -66,7 +66,7 @@ last_modified_at: 2023-08-28 19:23PM
 
 - WBS
 <div style = "font-size : 15px; color:red; margin-bottom: 7px;">
-<img src="/assets/images/wb.png" width="800px" height="500px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
+<img src="/assets/images/wb.jpg" width="800px" height="500px" title="px(픽셀) 크기 설정" alt="RubberDuck"/>
 </div>
 
 
