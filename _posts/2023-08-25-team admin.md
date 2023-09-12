@@ -1,6 +1,6 @@
 ---
-title:  "첫번째 팀 프로젝트 - 로그인&회원관리 페이지"
-excerpt: "아동용 책판매 쇼핑몰 - 로그인&회원관리"
+title:  "첫번째 팀 프로젝트 - 관리자 페이지"
+excerpt: "아동용 책판매 쇼핑몰 - 관리자"
 
 categories:
   - team preject
