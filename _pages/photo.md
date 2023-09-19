@@ -1,7 +1,7 @@
 ---
 title: "study"
 permalink: /photo/
-layout: categories
+layout: photo
 author_profile: true
 ---
 
